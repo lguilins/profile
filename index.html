@@ -11,9 +11,28 @@
   </head>
 
   <body>
-
-    <div class="container">
-      <div class="text-center">
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a href="#summary">
+            <i class="fas fa-user-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-artists">
+            <i class="fas fa-music"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#footer">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+    <div class="container-fluid">
+      <div class="card text-center" id="summary">
         <img src="images/html:css-ex.jpg" alt="Luiz Guilherme Lins" id="img-profile" class="img-circle">
         <br>
         <h1>Luiz Guilherme Lins</h1>
@@ -21,57 +40,76 @@
         <p>Eu sou o Luiz Guilherme, muito prazer.</p>
       </div>
 
-      <div class="text-center">
-        <ul class="list-inline">
-          <li>
-            <a href="https://www.facebook.com/guilherme.lins.779" target="_blank">
-              <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/luiz-guilherme-lins" target="_blank">
-              <i class="fab fa-linkedin-in"></i> Linkedin
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="text-center">
+          <ul class="list-inline">
+            <li class="text-center">
+              <a href="https://www.facebook.com/guilherme.lins.779" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </a>
+            </li>
+            <li class ="text-center">
+              <a href="https://www.linkedin.com/in/luiz-guilherme-lins" target="_blank">
+                <i class="fab fa-linkedin-in"></i> Linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="text-center">
-        <h2>My Favorite Artists</h2>
-        <br>
-        <table id="artists">
-          <tbody>
-            <tr>
-              <td id="img-baden-powell" class="container-img"></td>
+        <div class="text-center" id="favorite-artists">
+          <h2>My Favorite Artists</h2>
+          <br>
+          <table id="artists">
+            <tbody>
+              <tr>
+                <td id="img-baden-powell" class="container-img"></td>
+                <td>
+                  <h3>Baden Powell</h3>
+                  <p>Grande violonista brasileiro, autor de magníficas peças do samba brasileiro.
+                  </p>
+                </td>
+              </tr>
 
-              <td>
-                <h3>Baden Powell</h3>
-                <p>Grande violonista brasileiro, autor de magníficas peças do samba brasileiro.
-                </p>
-              </td>
-            </tr>
+              <tr>
+                <td id="img-raphael-rabello" class="container-img" alt="Raphael Rabello"></td>
+                <td>
+                  <h3>Raphael Rabello</h3>
+                  <p>Renomado violonista brasileiro, conhecido por sua incontestável técnica e habilidade.</p>
+                </td>
+              </tr>
 
-            <tr>
-              <td id="img-raphael-rabello" class="container-img" alt="Raphael Rabello"></td>
+              <tr>
+                <td id="img-jimi-hendrix" class="container-img" alt="Jimi Hendrix"></td>
+                <td>
+                  <h3>Jimi Hendrix</h3>
+                  <p>Distante de um mero mortal, um dos melhores guitarristas que já existiu.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-              <td>
-                <h3>Raphael Rabello</h3>
-                <p>Renomado violonista brasileiro, conhecido por sua incontestável técnica e habilidade.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td id="img-jimi-hendrix" class="container-img" alt="Jimi Hendrix"></td>
-
-              <td>
-                <h3>Jimi Hendrix</h3>
-                <p>Distante de um mero mortal, um dos melhores guitarristas que já existiu.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="card text-center" id="footer">
+          <h2>About this page</h2>
+          Página designada ao desenferrujamento das skills de HTML e CSS. É isso aí, pessoal.
+          <ul class="list-inline">
+           <li>
+             <a href="#">
+               <i class="fab fa-bitcoin"></i>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <i class="fas fa-rocket"></i>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <i class="fas fa-moon"></i>
+             </a>
+           </li>
+          </ul>
+        </div>
       </div>
     </div>
-
   </body>
 </html>
